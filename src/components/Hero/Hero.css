@@ -48,9 +48,22 @@
 }
 
 .search-bar>input {
-    margin-right: 25px;
     border: none;
     outline: none;
+    width: 80%;
+}
+
+.stats {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.stat>:nth-child(1) {
+    font-size: 2rem;
+}
+
+.stat>:nth-child(1)>:last-child {
+    color: orange;
 }
 
 /** Right Side ============================== **/

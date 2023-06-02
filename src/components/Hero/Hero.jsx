@@ -1,10 +1,12 @@
 import React from 'react';
-import './Hero.css'
-import { HiLocationMarker } from 'react-icons/hi'
+import './Hero.css';
+import { HiLocationMarker } from 'react-icons/hi';
+import CountUp from 'react-countup';
 
 const Hero = () => {
   return (
     <section className="hero-wrapper">
+
       <div className="paddings innerWidth flexCenter hero-container">
 
         {/* Right Side ============================== */}
@@ -19,8 +21,9 @@ const Hero = () => {
           </div>
 
           <div className="flexColStart hero-des">
-            <span>Encontre uma variedade de propriedades que se adequam a você com facilidade</span>
-            <span>Forget all difficulties in finding a residence for you</span>
+            <span className='secondaryText'>Encontre uma variedade de propriedades que se adequam a você com facilidade</span>
+            <span className='secondaryText'>Esqueça todas as dificuldades em encontrar uma residência para você
+            </span>
           </div>
 
           <div className="flexCenter search-bar">
@@ -28,6 +31,32 @@ const Hero = () => {
             <input type="text" />
             <button className='button'>Pesquisar</button>
           </div>
+
+          <div className="flexCenter stats">
+
+            <div className="flexColCenter stat">
+              <span><CountUp start={88000} end={90000} duration={4} />
+                <span>+</span>
+              </span>
+              <span className='secondaryText'>Casas e Apartamentos</span>
+            </div>
+
+            <div className="flexColCenter stat">
+              <span><CountUp start={1950} end={2000} duration={4} />
+                <span>+</span>
+              </span>
+              <span className='secondaryText'>Clientes Satisfeitos</span>
+            </div>
+
+            <div className="flexColCenter stat">
+              <span><CountUp end={28} />
+                <span>+</span>
+              </span>
+              <span className='secondaryText'>Prêmios pelo Mundo</span>
+            </div>
+
+          </div>
+
         </div>
 
         {/* Right Side ============================== */}
@@ -39,7 +68,6 @@ const Hero = () => {
           </div>
 
         </div>
-
 
       </div>
 
